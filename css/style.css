@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bottom-section{
+    height: 100px;
+    background-color: green;
+}
+
+.top-section{
+    height: calc(100vh - 100px);
+    background-color:blue ;
+    display: flex;
+}
+
+.sidebar{
+    width: 75px;
+    background-color: black;
+}
+
+.main-content{
+    width: calc(100vw - 75px);
+    background-color: azure;
+}
+
+header{
+    position: fixed;
+    left: 75px;
+    top: 0;
+    z-index: 1;
+    background-color: aqua;
+    width: calc(100vw - 75px);
+    text-align: right;
+}
+
+@media screen and (min-width: 786px) {
+    .sidebar{
+        width: 250px;
+    }
+
+    .main-content{
+        width: calc(100vw - 250px);
+    }
+
+    header{
+        left: 250px;
+        width: calc(100vw - 250px);
+    }
+    
+}
